@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .header{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition-property: width,height,transform,border-radius,background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            -webkit-box-shadow: 44px 44px 9px -11px rgba(10,21,245,1);
+-moz-box-shadow: 44px 44px 9px -11px rgba(10,21,245,1);
+box-shadow: 44px 44px 9px -11px rgba(10,21,245,1);
+            
+        }
+        .header:hover{
+            width: 400px;
+            height: 400px;
+            transform: rotate(10deg);
+            border-radius: 50%;
+            background-color: aquamarine;
+        }
+        .container2{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin-top: 10px;
+            /* animation-name: sanath;
+            animation-duration: 4s;
+            animation-iteration-count: infinite; */
+            animation: sanath 4s infinite;
+        }
+        @keyframes sanath{
+            0%{
+                background-color: aquamarine;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            25%{
+                background-color: rgb(161, 89, 167);
+                width: 125px;
+                height: 125px;
+                border-radius: 50%;
+            }
+            50%{
+                background-color: aquamarine;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+            75%{
+                background-color: rgb(149, 3, 247);
+                width: 175px;
+                height: 175px;
+                border-radius: 50%;
+            }
+            100%{
+                background-color: rgb(227, 255, 127);
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+        .container3{
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            margin-top: 10px;
+            color: black;
+            overflow: auto;
+        }
+        @media (min-width:500px) and (max-width:800px){
+            .container3{
+                background-color: blue;
+                height: 200px;
+                width: 200px;
+
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="container2"></div>
+    <div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet libero itaque repudiandae incidunt beatae commodi dolorum, consequuntur natus repellat cum, nulla doloremque nobis? Qui minima rerum magni saepe sint.</div>
+
+</body>
+</html>
